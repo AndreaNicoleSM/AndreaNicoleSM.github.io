@@ -1,6 +1,6 @@
 :root {
   --pink: rgb(208, 53, 109);
-  --dark_gray: #262f38;
+  --dark_gray: #1b242f;
   --med_gray: rgb(38, 41, 51);
   --light_gray: rgb(240, 240, 240);
   --alt_gray: rgb(217, 214, 214);
@@ -99,25 +99,34 @@ p {
   line-height: 42pt;
 }
 
-.text-highlight {
+span {
   color: var(--pink);
   font-weight: 500;
 }
 
 .hero-btn {
-  font-size: 20px;
-  font-weight: 200;
   border-color: white;
   border-style: solid;
-  padding: 12px 20px 12px 20px;
+  padding: 0px 20px;
   background: none;
   margin-top: 25px;
   align-items: center;
 }
 
 .hero-btn:hover {
-  background-color: var(--pink);
   cursor: pointer;
+  transition-behavior: normal;
+  transition-delay: 0s;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  background-color: var(--pink);
+}
+
+.hero-btn p {
+  font-size: 20px;
+  font-weight: 200;
+  color: white;
+  margin-top: 0px;
 }
 
 #btn-arrow {
@@ -318,6 +327,12 @@ nav ul {
   stroke: var(--dark_gray);
 }
 
+.grid-item .hero-btn {
+  padding: 12px 20px;
+  font-size: 16pt;
+  font-weight: 200;
+}
+
 /* CONTACT */
 
 #contact {
@@ -372,7 +387,8 @@ form {
 }
 
 #submit-btn {
-  padding: 5px 30px;
+  font-size: 14pt;
+  padding: 7px 30px;
   margin: 3px 0px 0px auto;
 }
 
@@ -413,6 +429,59 @@ form {
 .copyright {
   margin-bottom: 15px;
   color: var(--alt_gray);
+}
+
+/* DROPDOWN MENU FOR NAV BAR */
+.dropdown-container {
+  margin-left: auto;
+}
+/* Style The Dropdown Button */
+.dropbtn {
+  background-color: var(--pink);
+  color: white;
+  padding: 16px 25px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: rgb(253, 60, 131);
 }
 
 /* RESPONSIVE LAYOUT: PHONES */
@@ -459,7 +528,7 @@ form {
 
   .bar {
     height: 35px;
-    width: 350px;
+    width: 325px;
     margin: 10px 0px;
     background: var(--alt_gray);
   }
@@ -507,7 +576,7 @@ form {
 
 /* RESPONSIVE LAYOUT: TABLETS */
 
-/* @media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-device-width: 1200px) {
   nav {
     visibility: hidden;
   }
@@ -592,4 +661,4 @@ form {
     padding: 5px 20px;
     margin: 3px 0px 15px auto;
   }
-} */
+}

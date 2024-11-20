@@ -10,7 +10,6 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <script src="index.js"></script>
     <title>Andréa Melo</title>
   </head>
   <body>
@@ -18,40 +17,52 @@
       <!-- HOME -->
       <div id="home">
         <div id="hero" class="--hero_container">
-          <!-- <img
-            class="lattice"
-            src="imgs/79703-diamond-angle-symmetry-area-pattern-lattice-white_800x800.png"
-            alt=""
-          /> -->
           <div class="flex-col">
-            <h1 id="hero-txt">
-              Hello, I'm <span class="text-highlight">Andréa Melo</span>. <br />
-              I'm a front-end web developer.
-            </h1>
-            <button id="hero-btn" class="hero-btn">
-              <a href="#navbar">View my work</a>
+            <h1 id="hero-txt" data-i18n="welcome_message"></h1>
+            <a href="#navbar" id="hero-btn" class="hero-btn flex-row">
+              <p class="hero-btn-txt" data-i18n="hero_btn_txt"></p>
               <img
                 id="btn-arrow"
                 src="imgs/right-arrow-backup-2-svgrepo-com.svg"
                 alt=""
               />
-            </button>
+              <!-- </button> -->
+            </a>
           </div>
         </div>
       </div>
       <!-- NAVBAR -->
       <nav id="navbar">
         <ul class="nav-wrapper flex-row">
-          <li class="page-link"><a class="" href="#home">HOME</a></li>
-          <li class="page-link"><a href="#about">ABOUT</a></li>
-          <li class="page-link"><a href="#portfolio">PORTFOLIO</a></li>
-          <li class="page-link"><a href="#contact">CONTACT</a></li>
+          <li class="page-link">
+            <a data-i18n="nav_1" class="" href="#home"></a>
+          </li>
+          <li class="page-link">
+            <a data-i18n="nav_2" href="#navbar"></a>
+          </li>
+          <li class="page-link">
+            <a data-i18n="nav_3" href="#portfolio"></a>
+          </li>
+          <li class="page-link">
+            <a data-i18n="nav_4" href="#contact"></a>
+          </li>
         </ul>
+        <div class="dropdown-container">
+          <div class="dropdown">
+            <button class="dropbtn" data-i18n="language_menu"></button>
+            <div class="dropdown-content">
+              <a href="index.html" onclick="changeLanguage('en')">English</a>
+              <a href="index.html" onclick="changeLanguage('pt')"
+                >Português Brasileiro</a
+              >
+            </div>
+          </div>
+        </div>
       </nav>
       <!-- ABOUT -->
       <section id="about">
         <div class="header-wrapper flex-col">
-          <h2>ABOUT</h2>
+          <h2 data-i18n="section_about"></h2>
           <div class="underline"></div>
         </div>
         <div class="attribute-wrapper flex-row">
@@ -62,8 +73,8 @@
               alt=""
             />
             <div class="textblock flex-col">
-              <h3>Responsive</h3>
-              <p>My designs will work on any device, big or small.</p>
+              <h3 data-i18n="attribute-1"></h3>
+              <p data-i18n="attribute-1_txt"></p>
             </div>
           </div>
           <div class="attributes flex-col">
@@ -73,8 +84,8 @@
               alt=""
             />
             <div class="textblock flex-col">
-              <h3>Multilingual</h3>
-              <p>I offer services in English and Brazilian Portuguese.</p>
+              <h3 data-i18n="attribute-2"></h3>
+              <p data-i18n="attribute-2_txt"></p>
             </div>
           </div>
           <div class="attributes flex-col">
@@ -84,8 +95,8 @@
               alt=""
             />
             <div class="textblock flex-col">
-              <h3>Modern</h3>
-              <p>Strong preference for modern design aesthetics.</p>
+              <h3 data-i18n="attribute-3"></h3>
+              <p data-i18n="attribute-3_txt"></p>
             </div>
           </div>
           <div class="attributes flex-col">
@@ -95,8 +106,8 @@
               alt=""
             />
             <div class="textblock flex-col">
-              <h3>Dynamic</h3>
-              <p>I offer dynamic designs with simple animations.</p>
+              <h3 data-i18n="attribute-4"></h3>
+              <p data-i18n="attribute-4_txt"></p>
             </div>
           </div>
         </div>
@@ -104,13 +115,8 @@
           <div class="personal-info flex-col">
             <img class="bio-img" src="imgs/img-hex.png" alt="" />
             <div class="flex-col">
-              <h3 class="bio-text">Who am I?</h3>
-              <p>
-                I'm an aspiring Front-End Web Developer hailing from Pittsburgh,
-                PA. <br />
-                I have a passion for creating sleek websites with minimalistic
-                and modern design aesthetics.
-              </p>
+              <h3 class="bio-text" data-i18n="bio_header"></h3>
+              <p data-i18n="bio_txt"></p>
             </div>
           </div>
           <div class="skills-wrapper flex-col">
@@ -160,7 +166,7 @@
       <!-- PORTFOLIO -->
       <section id="portfolio">
         <div class="flex-col">
-          <h2>PORTFOLIO</h2>
+          <h2 data-i18n="section_portfolio"></h2>
           <div class="underline"></div>
         </div>
         <div class="grid-wrapper flex-col">
@@ -171,43 +177,36 @@
                 alt=""
               />
               <div class="grid-item-text flex-col">
-                <h5>EXAMPLE PROJECT</h5>
+                <h5 data-i18n="project_title"></h5>
                 <div class="underline"></div>
-                <p>
-                  This is an example project. This product is for testing
-                  purposes.
-                </p>
-                <button class="hero-btn">Learn More</button>
+                <p data-i18n="project_txt"></p>
+                <button class="hero-btn" data-i18n="project_btn"></button>
               </div>
             </div>
             <div class="grid-item flex-col item-2">
               <img
-                src="imgs/portfolio/luca-bravo-jUwvjOmCTWc-unsplash.jpg"
+                src="imgs/portfolio/luca-bravo-9l_326FISzk-unsplash.jpg"
                 alt=""
               />
               <div class="grid-item-text flex-col">
-                <h5>EXAMPLE PROJECT</h5>
+                <h5 data-i18n="project_title"></h5>
                 <div class="underline"></div>
-                <p>
-                  This is an example project. This product is for testing
-                  purposes.
-                </p>
-                <button class="hero-btn">Learn More</button>
+                <p data-i18n="project_txt"></p>
+                <button class="hero-btn" data-i18n="project_btn"></button>
               </div>
             </div>
             <div class="grid-item flex-col item-3">
               <img
-                src="imgs/portfolio/rodion-kutsaiev-0VGG7cqTwCo-unsplash.jpg"
+                src="imgs/portfolio/ales-nesetril-Im7lZjxeLhg-unsplash.jpg"
                 alt=""
               />
               <div class="grid-item-text flex-col">
-                <h5>EXAMPLE PROJECT</h5>
+                <h5 data-i18n="project_title"></h5>
                 <div class="underline"></div>
-                <p>
-                  This is an example project. This product is for testing
-                  purposes.
-                </p>
-                <button class="hero-btn">Learn More</button>
+                <p data-i18n="project_txt"></p>
+                <button class="hero-btn" data-i18n="project_btn">
+                  Learn More
+                </button>
               </div>
             </div>
           </div>
@@ -217,11 +216,9 @@
       <section id="contact">
         <div class="triangle-down"></div>
         <div class="header-wrapper flex-col">
-          <h2 class="contact-header">CONTACT</h2>
+          <h2 class="contact-header" data-i18n="section_contact"></h2>
           <div class="underline contact-header"></div>
-          <p class="contact-question">
-            Have a question or want to work with me?
-          </p>
+          <p class="contact-question" data-i18n="cta"></p>
           <form
             class="flex-col"
             action="mailto:andreamelo.dev@gmail.com"
@@ -230,14 +227,14 @@
           >
             <input
               class="input-area"
-              placeholder="Name"
+              placeholder="Name / Nome"
               type="text"
               id="name"
               required
             />
             <input
               class="input-area"
-              placeholder="Enter Email"
+              placeholder="Email"
               type="email"
               id="email"
               required
@@ -245,7 +242,7 @@
             <textarea
               class="input-area"
               id="message"
-              placeholder="Enter message"
+              placeholder="Message / Mensagem"
               name="message"
             ></textarea>
             <input
@@ -265,22 +262,25 @@
       <footer id="footer">
         <div class="footer-wrapper flex-col">
           <div class="social-wrapper flex-row">
-            <div class="social flex-col">
-              <a
-                href="https://www.linkedin.com/in/andréa-nicole-silva-melo-416234339/"
-                target="_blank"
-                ><img src="imgs/footer-svg/linkedin-161-svgrepo-com.svg" alt=""
-              /></a>
-            </div>
-            <div class="social flex-col">
-              <a href="https://github.com/AndreaNicoleSM" target="_blank"
-                ><img src="imgs/footer-svg/github-svgrepo-com.svg" alt=""
-              /></a>
-            </div>
+            <a
+              href="https://www.linkedin.com/in/andréa-nicole-silva-melo-416234339/"
+              target="_blank"
+              class="social flex-col"
+            >
+              <img src="imgs/footer-svg/linkedin-161-svgrepo-com.svg" alt="" />
+            </a>
+            <a
+              href="https://github.com/AndreaNicoleSM"
+              target="_blank"
+              class="social flex-col"
+            >
+              <img src="imgs/footer-svg/github-svgrepo-com.svg" alt="" />
+            </a>
           </div>
           <div class="copyright">ANDRÉA MELO ©2024</div>
         </div>
       </footer>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>

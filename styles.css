@@ -504,7 +504,23 @@ form {
   }
 
   nav {
+    height: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    align-items: left;
+  }
+
+  .nav-wrapper {
     visibility: hidden;
+  }
+
+  .dropdown-container {
+    margin-left: 0px;
+  }
+
+  .dropbtn {
+    padding: 10px 25px;
   }
 
   .header-wrapper {
@@ -578,7 +594,18 @@ form {
 
 @media only screen and (min-width: 600px) and (max-device-width: 1200px) {
   nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;
+  }
+
+  .nav-wrapper {
     visibility: hidden;
+  }
+
+  .dropdown-container {
+    margin-left: 0px;
   }
 
   .header-wrapper {

@@ -28,10 +28,10 @@ async function changeLanguage(lang) {
 
 // Call updateContent() on page load
 window.addEventListener("DOMContentLoaded", async () => {
-  const userPreferredLanguage =
-    localStorage.getItem("language") ||
-    navigator.language ||
-    navigator.userLanguage;
+  const userPreferredLanguage = localStorage.getItem("language") || "en";
   const langData = await fetchLanguageData(userPreferredLanguage);
   updateContent(langData);
 });
+
+// var userLang = navigator.language || navigator.userLanguage;
+// alert(userLang);

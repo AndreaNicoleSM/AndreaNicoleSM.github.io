@@ -127,6 +127,10 @@ span {
   align-items: center;
 }
 
+.btn-bg {
+  background-color: var(--med_gray);
+}
+
 .hero-btn:hover {
   cursor: pointer;
   transition-behavior: normal;

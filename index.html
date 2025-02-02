@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="tabs.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.1.0/css/font-awesome.min.css" />
     <title>Andréa Melo</title>
   </head>
   <body>
     <div class="overflow-wrap">
       <!-- HOME -->
       <div id="home">
-        <div id="hero" class="--hero_container">
+        <div id="hero" class="--hero_container container">
           <div class="flex-col">
             <h1 id="hero-txt" data-i18n="welcome_message"></h1>
             <a href="#navbar" id="hero-btn" class="hero-btn flex-row">
@@ -33,30 +35,21 @@
       </div>
       <!-- NAVBAR -->
       <nav id="navbar">
-        <ul class="nav-wrapper flex-row">
-          <li class="page-link">
-            <a data-i18n="nav_1" class="" href="#home"></a>
-          </li>
-          <li class="page-link">
-            <a data-i18n="nav_2" href="#navbar"></a>
-          </li>
-          <li class="page-link">
-            <a data-i18n="nav_3" href="#portfolio"></a>
-          </li>
-          <li class="page-link">
-            <a data-i18n="nav_4" href="#contact"></a>
-          </li>
-        </ul>
-        <div class="dropdown-container">
-          <div class="dropdown">
-            <button class="dropbtn" data-i18n="language_menu"></button>
-            <div class="dropdown-content">
-              <a href="index.html" onclick="changeLanguage('en-US')">English</a>
-              <a href="index.html" onclick="changeLanguage('pt-BR')"
-                >Português Brasileiro</a
-              >
-            </div>
-          </div>
+        <div class="navbar-start">
+          <ul class="nav-wrapper flex-row">
+            <li class="page-link">
+              <a data-i18n="nav_1" class="" href="#home"></a>
+            </li>
+            <li class="page-link">
+              <a data-i18n="nav_2" href="#navbar"></a>
+            </li>
+            <li class="page-link">
+              <a data-i18n="nav_3" href="#portfolio"></a>
+            </li>
+            <li class="page-link">
+              <a data-i18n="nav_4" href="#contact"></a>
+            </li>
+          </ul>
         </div>
       </nav>
       <!-- ABOUT -->
@@ -169,51 +162,199 @@
           <h2 data-i18n="section_portfolio"></h2>
           <div class="underline"></div>
         </div>
-        <div class="grid-wrapper flex-col">
-          <div class="grid-container">
-            <div class="grid-item flex-col item-1">
-              <img
-                src="imgs/portfolio/kaitlyn-baker-vZJdYl5JVXY-unsplash.jpg"
-                alt=""
-              />
-              <div class="grid-item-text flex-col">
-                <h5 data-i18n="project_title"></h5>
-                <div class="underline"></div>
-                <p data-i18n="project_txt"></p>
-                <button class="hero-btn" data-i18n="project_btn"></button>
+        <div class="portfolio-content-wrapper">
+          <div class="tabs-container">
+            <!-- tabs -->
+        <div class="pcss3t pcss3t-effect-scale pcss3t-theme-1 tab-page">
+          <input type="radio" name="pcss3t" checked  id="tab1"class="tab-content-first">
+          <label for="tab1">Web Apps</label>
+          
+          <input type="radio" name="pcss3t" id="tab2" class="tab-content-2">
+          <label for="tab2">React</label>
+          
+          <input type="radio" name="pcss3t" id="tab3" class="tab-content-3">
+          <label for="tab3">Python</label>
+          
+          <input type="radio" name="pcss3t" id="tab5" class="tab-content-last">
+          <label for="tab5">Certifications</label>
+          
+          <ul>
+            <li class="tab-content tab-content-first typography">
+              <p data-i18n="web_app_content"></p>
+              <div class="grid-wrapper flex-col">
+                <div class="grid-container">
+                  <div class="grid-item flex-col item-1">
+                    <img
+                      src="imgs/portfolio/arteleonoir.webp"
+                      alt=""
+                    />
+                    <div class="grid-item-text flex-col">
+                      <h5 data-i18n="project_title_1"></h5>
+                      <div class="underline"></div>
+                      <p data-i18n="project_txt_1"></p>
+                      <a href="https://arteleonoir.netlify.app" target="_blank">
+                        <button class="hero-btn" data-i18n="project_btn_1"></button>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="grid-item flex-col item-2">
+                    <img
+                      src="imgs/portfolio/digital business card.webp"
+                      alt=""
+                    />
+                    <div class="grid-item-text flex-col">
+                      <h5 data-i18n="project_title_2"></h5>
+                      <div class="underline"></div>
+                      <p data-i18n="project_txt_2"></p>
+                      <a href="https://github.com/AndreaNicoleSM/Digital-Business-Card" target="_blank">
+                        <button class="hero-btn" data-i18n="project_btn_2"></button>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="grid-item flex-col item-3">
+                    <!-- <img
+                      src="imgs/portfolio/ales-nesetril-Im7lZjxeLhg-unsplash.jpg"
+                      alt=""
+                    />
+                    <div class="grid-item-text flex-col">
+                      <h5 data-i18n="project_title"></h5>
+                      <div class="underline"></div>
+                      <p data-i18n="project_txt"></p>
+                      <button class="hero-btn" data-i18n="project_btn">
+                        Learn More
+                      </button>
+                    </div> -->
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="grid-item flex-col item-2">
-              <img
-                src="imgs/portfolio/luca-bravo-9l_326FISzk-unsplash.jpg"
-                alt=""
-              />
-              <div class="grid-item-text flex-col">
-                <h5 data-i18n="project_title"></h5>
-                <div class="underline"></div>
-                <p data-i18n="project_txt"></p>
-                <button class="hero-btn" data-i18n="project_btn"></button>
+            </li>
+            
+            <li class="tab-content tab-content-2 typography">
+              <p data-i18n="react_content"></p>
+              <div class="grid-wrapper flex-col">
+                <div class="grid-container">
+                  <div class="grid-item flex-col item-1">
+                    <img
+                      src="imgs/portfolio/digital business card.webp"
+                      alt=""
+                    />
+                    <div class="grid-item-text flex-col">
+                      <h5 data-i18n="project_title_2"></h5>
+                      <div class="underline"></div>
+                      <p data-i18n="project_txt_2"></p>
+                      <a href="https://github.com/AndreaNicoleSM/Digital-Business-Card" target="_blank">
+                        <button class="hero-btn" data-i18n="project_btn_2"></button>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="grid-item flex-col item-2">
+                    <!-- <img
+                      src="imgs/portfolio/luca-bravo-9l_326FISzk-unsplash.jpg"
+                      alt=""
+                    />
+                    <div class="grid-item-text flex-col">
+                      <h5 data-i18n="project_title"></h5>
+                      <div class="underline"></div>
+                      <p data-i18n="project_txt"></p>
+                      <button class="hero-btn" data-i18n="project_btn"></button>
+                    </div> -->
+                  </div>
+                  <div class="grid-item flex-col item-3">
+                    <!-- <img
+                      src="imgs/portfolio/ales-nesetril-Im7lZjxeLhg-unsplash.jpg"
+                      alt=""
+                    />
+                    <div class="grid-item-text flex-col">
+                      <h5 data-i18n="project_title"></h5>
+                      <div class="underline"></div>
+                      <p data-i18n="project_txt"></p>
+                      <button class="hero-btn" data-i18n="project_btn">
+                        Learn More
+                      </button>
+                    </div> -->
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="grid-item flex-col item-3">
-              <img
-                src="imgs/portfolio/ales-nesetril-Im7lZjxeLhg-unsplash.jpg"
-                alt=""
-              />
-              <div class="grid-item-text flex-col">
-                <h5 data-i18n="project_title"></h5>
-                <div class="underline"></div>
-                <p data-i18n="project_txt"></p>
-                <button class="hero-btn" data-i18n="project_btn">
-                  Learn More
-                </button>
+
+            </li>
+            
+            <li class="tab-content tab-content-3 typography">
+              <p data-i18n="python_content"></p>
+              <div class="grid-wrapper flex-col">
+                <div class="grid-container">
+                  <div class="grid-item flex-col item-1">
+                    <img
+                      src="imgs/portfolio/bar_plot.webp"
+                      alt=""
+                    />
+                    <div class="grid-item-text flex-col">
+                      <h5 class="dark" data-i18n="project_title_python_1"></h5>
+                      <div class="underline-dark"></div>
+                      <p class="dark" data-i18n="project_txt_python_1"></p>
+                      <a href="https://github.com/AndreaNicoleSM/Page-View-Time-Series-Visualizer" target="_blank">
+                        <button class="hero-btn dark-btn" data-i18n="project_btn_2"></button>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="grid-item flex-col item-2">
+                    <img
+                      src="imgs/portfolio/heatmap.webp"
+                      alt=""
+                    />
+                    <div class="grid-item-text flex-col">
+                      <h5 class="dark" data-i18n="project_title_python_2"></h5>
+                      <div class="underline-dark"></div>
+                      <p class="dark" data-i18n="project_txt_python_2"></p>
+                      <a href="https://github.com/AndreaNicoleSM/Medical-Data-Visualizer" target="_blank">
+                        <button class="hero-btn dark-btn" data-i18n="project_btn_2"></button>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="grid-item flex-col item-3">
+                    <img
+                      src="imgs/portfolio/sea_level_plot.webp"
+                      alt=""
+                    />
+                    <div class="grid-item-text flex-col">
+                      <h5 class="dark" data-i18n="project_title_python_3"></h5>
+                      <div class="underline-dark"></div>
+                      <p class="dark" data-i18n="project_txt_python_3"></p>
+                      <a href="https://github.com/AndreaNicoleSM/Sea-Level-Predictor" target="_blank">
+                        <button class="hero-btn dark-btn" data-i18n="project_btn_2"></button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
+            </li>
+            
+            <li class="tab-content tab-content-last typography">
+              <p data-i18n="certifications_content"></p>
+              <div class="grid-container-cert">
+                <div class="grid-item-cert flex-col item-1">
+                  <img
+                    src="imgs/portfolio/Data Analysis Cert.webp"
+                    alt=""
+                  />
+                  <div class="grid-item-text flex-col">
+                    <h5 data-i18n="project_title_1"></h5>
+                    <div class="underline"></div>
+                    <p data-i18n="project_txt_1"></p>
+                    <button class="hero-btn" data-i18n="project_btn"></button>
+                  </div>
+                </div>
+              </div>
+              
+            </li>
+          </ul>
+        </div>
+        <!--/ tabs -->
           </div>
         </div>
+        
       </section>
       <!-- contact -->
-      <section id="contact">
+      <section id="contact" class="container">
         <div class="triangle-down"></div>
         <div class="header-wrapper flex-col">
           <h2 class="contact-header" data-i18n="section_contact"></h2>
@@ -221,13 +362,16 @@
           <p class="contact-question" data-i18n="cta"></p>
           <form
             class="flex-col"
-            action="mailto:andreamelo.dev@gmail.com"
-            method="get"
-            enctype="text/plain"
+            action="https://api.web3forms.com/submit"
+            method="POST"
           >
+            <input type="hidden" name="access_key" value="0cdb24d8-c53f-4557-87ee-3bf8bac97b98">
+            <input type="hidden" name="subject" value="New Commission Request">
+            <input type="hidden" name="form_name" value="Website Contact Form">
             <input
               class="input-area"
               placeholder="Name / Nome"
+              name="name"
               type="text"
               id="name"
               required
@@ -235,6 +379,7 @@
             <input
               class="input-area"
               placeholder="Email"
+              name="email"
               type="email"
               id="email"
               required
@@ -244,13 +389,21 @@
               id="message"
               placeholder="Message / Mensagem"
               name="message"
+              required
             ></textarea>
-            <input
+            <button
+              data-i18n="submit_btn"
+              id="submit-btn"
+              class="hero-btn"
+              type="submit"
+              value="SUBMIT">
+            </button>
+            <!-- <input
               id="submit-btn"
               class="hero-btn"
               type="submit"
               value="SUBMIT"
-            />
+            /> -->
             <!-- <div class="submit-bottom">
               <p class="success hidden">Success!</p>
               <button id="submit-btn" class="hero-btn">SUBMIT</button>

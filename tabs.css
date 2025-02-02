@@ -1,3 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Gabriela);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/*----------------------------------------------------------------------------*/
+/*                               CUSTOMIZATION                                */
+/*----------------------------------------------------------------------------*/
+
+/**/
+/* height */
+/**/
+.pcss3t > ul,
+.pcss3t > ul > li {
+	height: 370px;
+}
+
+/* html, body, div, h1, h2, h3, p, pre {
+	margin: 0;
+	padding: 0;
+	color: #333;
+}
+html, body {
+	background: #bdcbe5;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.55;
+}
+h1 {
+	padding: 40px 0 20px;
+	font: 40px/60px Gabriela, Georgia, serif;
+	text-align: center;
+	text-shadow: 3px 3px rgba(0,0,0,0.1);
+	color: #fff;	
+}
+p {
+	margin-bottom: 40px;
+	text-align: center;
+}
+a {
+	text-decoration: underline;
+	color: #1889e6;
+}
+a:hover {
+	text-decoration: none;
+} */
 .bg {
 	position: fixed;
 	top: 0;
@@ -110,7 +154,7 @@
 	height: auto !important;
 }
 .pcss3t-height-auto > ul > li {
-	position: static;
+	position:static;
 	display: none;
 	height: auto !important;
 }
@@ -121,6 +165,7 @@
 .pcss3t-height-auto > .tab-content-5:checked ~ ul .tab-content-5,
 .pcss3t-height-auto > .tab-content-last:checked ~ ul .tab-content-last {
 	display: block;
+	
 }
 
 
@@ -199,13 +244,14 @@
 /**/
 /* typography */
 /**/
-.pcss3t .typography {
+/* .pcss3t .typography {
 	color: #666;
 }
 .pcss3t .typography h1,
 .pcss3t .typography h2,
 .pcss3t .typography h3,
 .pcss3t .typography h4,
+.pcss3t .typography h5,
 .pcss3t .typography h6 {
 	margin: 40px 0 0 0;
 	padding: 0;
@@ -232,14 +278,23 @@
 	font-size: 20px;
 	line-height: 30px;
 }
-
+.pcss3t .typography h5 {
+	font-size: 15px;
+	line-height: 23px;
+	text-transform: uppercase;
+}
 .pcss3t .typography h6 {
 	font-size: 13px;
 	line-height: 20px;
 	font-weight: 700;
 	text-transform: uppercase;
 }
-
+.pcss3t .typography p {
+	margin: 20px 0 0 0;
+	padding: 0;
+	line-height: 20px;
+	text-align: left;
+} */
 .pcss3t .typography ul,
 .pcss3t .typography ol {
 	list-style: none;
@@ -294,13 +349,24 @@
 }
 .pcss3t .typography .link {
 	text-decoration: underline;
-	color: #1889e6;
+	color: var(--pink);
 	cursor: pointer;
 }
 .pcss3t .typography .link:hover {
 	text-decoration: none;
 }
-
+.pcss3t .typography h1:first-child,
+.pcss3t .typography h2:first-child,
+.pcss3t .typography h3:first-child,
+.pcss3t .typography h4:first-child,
+.pcss3t .typography h5:first-child,
+.pcss3t .typography h6:first-child,
+.pcss3t .typography p:first-child {
+	margin-top: 0;
+}
+.pcss3t .typography .text-center {
+	text-align: center;
+}
 .pcss3t .typography .text-right {
 	text-align: right;
 }
@@ -694,6 +760,7 @@
 	.pcss3t > .right {
 		float: none;
 	}
+	
 }
 
 
@@ -708,7 +775,7 @@
 .pcss3t > label {	
 	padding: 0 20px;
 	background: #e5e5e5;
-	font-size: 16px;
+	font-size: 13px;
 	line-height: 49px;
 }
 .pcss3t > label:hover {
@@ -948,19 +1015,3 @@
 }
 
 
-/*----------------------------------------------------------------------------*/
-/*                               CUSTOMIZATION                                */
-/*----------------------------------------------------------------------------*/
-
-/**/
-/* height */
-/**/
-.pcss3t > ul,
-.pcss3t > ul > li {
-	height: 550px;
-}
-
-.pcss3t > ul,
-.pcss3t > ul > li {
-	width: 1300px;
-}

@@ -11,6 +11,9 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.1.0/css/font-awesome.min.css" />
     <title>Andréa Melo</title>
   </head>
@@ -165,7 +168,7 @@
         <div class="portfolio-content-wrapper">
           <div class="tabs-container">
             <!-- tabs -->
-        <div class="pcss3t pcss3t-effect-scale pcss3t-theme-1 tab-page">
+        <div class="pcss3t pcss3t-effect-scale pcss3t-height-auto pcss3t-theme-1 tab-page">
           <input type="radio" name="pcss3t" checked  id="tab1"class="tab-content-first">
           <label for="tab1">Web Apps</label>
           
@@ -211,7 +214,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="grid-item flex-col item-3">
+                  <div class="grid-item flex-col item-3 webapp-3">
                     <!-- <img
                       src="imgs/portfolio/ales-nesetril-Im7lZjxeLhg-unsplash.jpg"
                       alt=""
@@ -247,7 +250,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="grid-item flex-col item-2">
+                  <div class="grid-item flex-col item-2 web-app-3-mobile">
                     <!-- <img
                       src="imgs/portfolio/luca-bravo-9l_326FISzk-unsplash.jpg"
                       alt=""
@@ -259,7 +262,7 @@
                       <button class="hero-btn" data-i18n="project_btn"></button>
                     </div> -->
                   </div>
-                  <div class="grid-item flex-col item-3">
+                  <div class="grid-item flex-col item-3 webapp-3">
                     <!-- <img
                       src="imgs/portfolio/ales-nesetril-Im7lZjxeLhg-unsplash.jpg"
                       alt=""
@@ -332,10 +335,14 @@
               <p data-i18n="certifications_content"></p>
               <div class="grid-container-cert">
                 <div class="grid-item-cert flex-col item-1">
-                  <img
+                  <a data-fancybox="gallery" href="imgs/portfolio/Data Analysis Cert full-size.webp">
+                    <img
+                    class="cert-img"
                     src="imgs/portfolio/Data Analysis Cert.webp"
                     alt=""
                   />
+                  </a>
+                  
                   <div class="grid-item-text flex-col">
                     <h5 data-i18n="project_title_1"></h5>
                     <div class="underline"></div>
@@ -343,8 +350,22 @@
                     <button class="hero-btn" data-i18n="project_btn"></button>
                   </div>
                 </div>
-              </div>
               
+                <div class="grid-container-cert web-app-3-mobile">
+                  <div class="grid-item-cert flex-col item-1">
+                    <!-- <img
+                      src="imgs/portfolio/Data Analysis Cert.webp"
+                      alt=""
+                    />
+                    <div class="grid-item-text flex-col">
+                      <h5 data-i18n="project_title_1"></h5>
+                      <div class="underline"></div>
+                      <p data-i18n="project_txt_1"></p>
+                      <button class="hero-btn" data-i18n="project_btn"></button>
+                    </div> -->
+                  </div>
+                </div>
+            </div>
             </li>
           </ul>
         </div>
@@ -398,16 +419,7 @@
               type="submit"
               value="SUBMIT">
             </button>
-            <!-- <input
-              id="submit-btn"
-              class="hero-btn"
-              type="submit"
-              value="SUBMIT"
-            /> -->
-            <!-- <div class="submit-bottom">
-              <p class="success hidden">Success!</p>
-              <button id="submit-btn" class="hero-btn">SUBMIT</button>
-            </div> -->
+
           </form>
         </div>
       </section>
@@ -435,5 +447,15 @@
       </footer>
     </div>
     <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind('[data-fancybox]', {
+      });
+      $('[data-fancybox]').fancybox({
+        image : {
+        protect: true
+        }
+        })
+    </script>
   </body>
 </html>

@@ -85,7 +85,7 @@ p {
 }
 
 .hidden {
-  visibility: hidden;
+  display: none;
 }
 
 .dark {
@@ -390,24 +390,34 @@ option {
 .grid-item img {
   height: 400px;
   width: 400px;
-  position: absolute;
+  position: relative;
 }
 
 .grid-item:hover img {
   -webkit-filter: blur(20px);
   filter: blur(20px);
   transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
 }
 
 .grid-item-text {
-  position: absolute;
+  display: none;
   opacity: 0;
+  position: absolute;
   transition: 0.5s ease;
   padding: 0px 20px;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
 }
 
 
 .grid-item:hover .grid-item-text {
+  display: flex;
   opacity: 1;
 }
 
@@ -468,11 +478,17 @@ option {
   width: 600px;
 }
 
-.grid-item-cert img {
+.grid-item-cert a {
   height: 400px;
   width: 600px;
-  position: absolute;
+  position: relative;
 }
+
+.cert-img {
+  height: 400px;
+  width: 600px;
+}
+
 
 /* CONTACT */
 
@@ -712,6 +728,26 @@ form {
     width: 300px;
   }
 
+  .grid-container-cert {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    gap: 0px 1px;
+    margin-top: 20px;
+  }
+  
+  .grid-item-cert {
+    position: relative;
+    height: 200px;
+    width: 300px;
+  }
+  
+  .grid-item-cert img {
+    height: 200px;
+    width: 300px;
+    position: relative;
+  }
+
   .triangle-down {
     border-top: 50px solid var(--light_gray);
   }
@@ -719,6 +755,7 @@ form {
   .contact-question {
     font-size: 12pt;
     margin-top: 30px;
+    padding: 0px 5px;
   }
 
   .input-area {
@@ -729,6 +766,24 @@ form {
     padding: 5px 20px;
     margin: 3px 0px 15px auto;
   }
+
+  .portfolio-content-wrapper {
+    display: block;
+    margin: 0px auto;
+  }
+
+  .tabs-container {
+    margin: 35px 15px;
+  }
+  
+  .webapp-3 {
+    display: none;
+  }
+
+  .web-app-3-mobile {
+    display: none;
+  }
+  
 }
 
 /* RESPONSIVE LAYOUT: TABLETS */
@@ -812,6 +867,16 @@ form {
     width: 300px;
   }
 
+  .grid-item-text h5 {
+    font-size: 20pt;
+    font-weight: 400;
+  }
+  
+  .grid-item-text p {
+    margin-top: 5px;
+    font-size: 12pt;
+  }
+
   .triangle-down {
     border-top: 50px solid var(--light_gray);
   }
@@ -829,4 +894,19 @@ form {
     padding: 5px 20px;
     margin: 3px 0px 15px auto;
   }
+
+  .portfolio-content-wrapper {
+    display: block;
+    margin: 0px auto;
+    width: 800px;
+  }
+  
+  .tab-content {
+    display: block;
+    width: 800px;
+  }  
+
+.webapp-3 {
+  display: none;
+}
 }

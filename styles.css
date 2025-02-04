@@ -1,4 +1,5 @@
 :root {
+  /* color-scheme: light dark; */
   --pink: rgb(208, 53, 109);
   --dark_gray: #1b242f;
   --med_gray: rgb(38, 41, 51);
@@ -209,64 +210,52 @@ nav ul {
   margin-right: 10px;
 }
 
-.translation-icon {
-  display: block;
-  width: 38px;
-  height: 38px;
-  margin-right: 0.33rem;
-}
-
-.locale-switcher {
-  margin-bottom: 0;
-  font-size: 20px;
-  color: #1b242f;
-}
-
-select {
-  /* Reset Select */
+.theme-checkbox {
+  --toggle-size: 8px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
-  outline: 10px red;
-  border: 0;
-  box-shadow: none;
-  /* Personalize */
-  flex: 1;
-  padding: 0 1em;
-  color: #fff;
-  background-color: var(--alt_gray);
-  background-image: none;
-  cursor: pointer;
-}
-/* Remove IE arrow */
-select::-ms-expand {
-  display: none;
-}
-/* Custom Select wrapper */
-.select {
+  width: 6.25em;
+  height: 3.125em;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, var(--pink))) no-repeat;
+  background: -o-linear-gradient(left, #efefef 50%, var(--pink) 50%) no-repeat;
+  background: linear-gradient(to right, #efefef 50%, var(--pink) 50%) no-repeat;
+  background-size: 205%;
+  background-position: 0;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 99em;
   position: relative;
-  display: flex;
-  width: 20em;
-  height: 3em;
-  border-radius: .25em;
-  overflow: hidden;
-}
-/* Arrow */
-.select::after {
-  content: '\25BC';
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 1em;
-  background-color: #34495e;
-  transition: .25s all ease;
-  pointer-events: none;
-}
-/* Transition */
-.select:hover::after {
-  color: var(--pink);
+  cursor: pointer;
+  font-size: var(--toggle-size);
 }
 
-option {
-  color: #1b242f;
+.theme-checkbox::before {
+  content: "";
+  width: 2.25em;
+  height: 2.25em;
+  position: absolute;
+  top: 0.438em;
+  left: 0.438em;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
+  background: -o-linear-gradient(left, #efefef 50%, rgb(38, 41, 51) 50%) no-repeat;
+  background: linear-gradient(to right, #efefef 50%, rgb(38, 41, 51) 50%) no-repeat;
+  background-size: 205%;
+  background-position: 100%;
+  border-radius: 50%;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.theme-checkbox:checked::before {
+  left: calc(100% - 2.25em - 0.438em);
+  background-position: 0;
+}
+
+.theme-checkbox:checked {
+  background-position: 100%;
 }
 
 /* ABOUT */
@@ -274,11 +263,12 @@ option {
 #about {
   /* height: 120vh; */
   background-color: white;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
 }
 
 .header-wrapper {
-  margin-top: 75px;
+  margin-top: 0px;
+  padding-top: 50px;
 }
 
 .underline {
@@ -361,7 +351,7 @@ option {
 #portfolio {
   /* height: 75vh; */
   background-color: var(--light_gray);
-  padding: 75px 0px;
+  padding: 50px 0px;
 }
 
 .portfolio-content-wrapper {
@@ -641,6 +631,88 @@ form {
   background-color: rgb(253, 60, 131);
 }
 
+/* DARK MODE */
+.dark-mode .--hero_container,
+.dark-mode #contact {
+  background-color: rgb(10, 10, 10);
+}
+
+.dark-mode nav,
+.dark-mode .footer-wrapper {
+  background-color: black;
+}
+
+.dark-mode #about {
+  background-color: #121212;
+}
+
+.dark-mode #about h2,
+.dark-mode #portfolio h2,
+.dark-mode #about h3 {
+  color: white;
+}
+
+.dark-mode #about p,
+.dark-mode #portfolio p {
+  color: #9ea2ab;
+}
+
+.dark-mode .underline {
+  background-color: white;
+}
+
+.dark-mode .attribute-img {
+  filter: invert(100%) sepia(0%) saturate(7462%) hue-rotate(343deg) brightness(108%) contrast(101%);
+}
+
+.dark-mode #portfolio {
+  background-color: #262626;
+}
+
+.dark-mode .triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 50vw solid transparent;
+  border-right: 50vw solid transparent;
+  border-top: 100px solid #262626;
+}
+
+.dark-mode .pcss3t > label {	
+	padding: 0 20px;
+	background: #131313;
+	font-size: 13px;
+	line-height: 49px;
+}
+.dark-mode .pcss3t > label:hover {
+	background: #121212;
+}
+.dark-mode .pcss3t > input:checked + label {
+	background: #121212;
+}
+.dark-mode .pcss3t > ul {
+	background: #121212;
+	text-align: left;
+}
+
+.dark-mode .input-area {
+  background-color: black;
+}
+
+.dark-mode .hero-btn,
+.dark-mode .social {
+  background-color: rgb(10, 10, 10);
+}
+
+.dark-mode .hero-btn:hover,
+.dark-mode .social:hover {
+  background-color: var(--pink);
+}
+
+.dark-mode #portfolio .hero-btn {
+  color: white;
+}
+
+
 /* RESPONSIVE LAYOUT: PHONES */
 
 @media only screen and (max-width: 600px) {
@@ -663,13 +735,13 @@ form {
   nav {
     height: 40px;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: left;
-    align-items: left;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;
   }
 
   .nav-wrapper {
-    visibility: hidden;
+    display: none;
   }
 
   .dropdown-container {
@@ -678,10 +750,6 @@ form {
 
   .dropbtn {
     padding: 10px 25px;
-  }
-
-  .header-wrapper {
-    margin-top: 20px;
   }
 
   .attribute-wrapper {
@@ -797,15 +865,11 @@ form {
   }
 
   .nav-wrapper {
-    visibility: hidden;
+    display: none;
   }
 
   .dropdown-container {
     margin-left: 0px;
-  }
-
-  .header-wrapper {
-    margin-top: 20px;
   }
 
   .attribute-wrapper {

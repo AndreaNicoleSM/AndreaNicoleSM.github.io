@@ -93,3 +93,17 @@ document.addEventListener("DOMContentLoaded", async () => {
 //   updateContent(langData);
 // });
 
+
+// Dark Mode Toggle
+
+function darkMode() {
+  var element = document.body
+  element.classList.toggle("dark-mode")
+}
+
+const darkToggle = document.getElementById("dark-toggle")
+
+darkToggle.addEventListener("click", darkMode);
+
+
+

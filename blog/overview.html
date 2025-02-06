@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="../imgs/letter-english-a-svgrepo-com.svg" type="image/x-icon">
     <title>Blog</title>
 </head>
 <body>
@@ -27,13 +28,17 @@
                 <div class="navbar-container">
                     <div class="navbar-section navbar-section-search"></div>
                     <div class="navbar-section">
+                        <button onclick="toggleMobileNav()" id="toggle-nav" class="navbar-button nav-menu-button ">
+                            <svg id="hamburger" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 7L7 7M20 7L11 7" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path> <path d="M20 17H17M4 17L13 17" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path> <path d="M4 12H7L20 12" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
+                            <svg id="close-btn" class="inactive" viewBox="-0.5 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3 21.32L21 3.32001" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M3 3.32001L21 21.32" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                        </button>
                         <nav class="navbar-menu nav-items ">
                             <a class="active" href="overview.html">Overview</a>
                             <a href="notes.html" aria-current="page">Notes</a>
                             <a href="articles.html">Articles</a>
                             <a href="projects.html">Projects</a>
                             <a href="me.html">About me</a></nav>
-                        <nav class="navbar-menu social">
+                        <nav class="social">
                             <a href="https://github.com/AndreaNicoleSM" class="social-icon navbar-icon" target="_blank" style="display:inline-block;width:50px;height:50px;position:relative;overflow:hidden;vertical-align:middle" aria-label="github"><span class="social-container" style="position:absolute;top:0;left:0;width:100%;height:100%"><svg role="img" aria-label="github social icon" class="social-svg" viewBox="0 0 64 64" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:50%;fill-rule:evenodd"><g class="social-svg-icon" style="transition:fill 170ms ease-in-out;fill:currentColor"><path d="M0,0H64V64H0ZM0 0v64h64V0zm37.1 47.2c-.8.2-1.1-.3-1.1-.8V42c0-1.5-.5-2.5-1.1-3 3.6-.4 7.3-1.7 7.3-7.9 0-1.7-.6-3.2-1.6-4.3.2-.4.7-2-.2-4.2 0 0-1.3-.4-4.4 1.6-1.3-.4-2.6-.5-4-.5s-2.7.2-4 .5c-3.1-2.1-4.4-1.6-4.4-1.6-.9 2.2-.3 3.8-.2 4.2-1 1.1-1.6 2.5-1.6 4.3 0 6.1 3.7 7.5 7.3 7.9-.5.4-.9 1.1-1 2.1-.9.4-3.2 1.1-4.7-1.3 0 0-.8-1.5-2.5-1.6 0 0-1.6 0-.1 1 0 0 1 .5 1.8 2.3 0 0 .9 3.1 5.4 2.1v2.7c0 .4-.3.9-1.1.8-6.3-2-10.9-8-10.9-15.1 0-8.8 7.2-16 16-16s16 7.2 16 16c0 7.1-4.6 13.1-10.9 15.2"></path></g><g class="social-svg-mask" style="transition:fill 170ms ease-in-out;fill:transparent"><path d="M0 0v64h64V0zm37.1 47.2c-.8.2-1.1-.3-1.1-.8V42c0-1.5-.5-2.5-1.1-3 3.6-.4 7.3-1.7 7.3-7.9 0-1.7-.6-3.2-1.6-4.3.2-.4.7-2-.2-4.2 0 0-1.3-.4-4.4 1.6-1.3-.4-2.6-.5-4-.5s-2.7.2-4 .5c-3.1-2.1-4.4-1.6-4.4-1.6-.9 2.2-.3 3.8-.2 4.2-1 1.1-1.6 2.5-1.6 4.3 0 6.1 3.7 7.5 7.3 7.9-.5.4-.9 1.1-1 2.1-.9.4-3.2 1.1-4.7-1.3 0 0-.8-1.5-2.5-1.6 0 0-1.6 0-.1 1 0 0 1 .5 1.8 2.3 0 0 .9 3.1 5.4 2.1v2.7c0 .4-.3.9-1.1.8-6.3-2-10.9-8-10.9-15.1 0-8.8 7.2-16 16-16s16 7.2 16 16c0 7.1-4.6 13.1-10.9 15.2"></path></g></svg></span></a>
                             <a href="https://bsky.app/profile/andreamelodev.bsky.social" class="social-icon navbar-icon" target="_blank" style="display:inline-block;width:50px;height:50px;position:relative;overflow:hidden;vertical-align:middle" aria-label="bsky.app"><span class="social-container" style="position:absolute;top:0;left:0;width:100%;height:100%"><svg role="img" aria-label="bsky.app social icon" class="social-svg" viewBox="0 0 64 64" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:50%;fill-rule:evenodd"><g class="social-svg-icon" style="transition:fill 170ms ease-in-out;fill:currentColor"><path d="M0,0H64V64H0ZM0 0v64h64V0Zm45.498 17.766a2.84 2.84 0 0 1 1.354.312c.578.296.932.915 1.103 1.92.085.513.046 2.326-.086 3.666-.013.125-.038.494-.064.822-.02.322-.054.696-.067.82-.013.125-.039.434-.058.69-.027.25-.06.585-.073.736-.02.158-.046.408-.066.559-.099.92-.118 1.07-.13 1.104-.014.02-.041.244-.067.494-.171 1.662-1.354 3.376-2.938 4.263-1.261.703-2.667 1.045-4.336 1.051-.801.007-.927.041-.447.133.94.17 2.005.518 2.86.945 2.247 1.11 3.041 2.747 2.331 4.778-.118.322-.25.636-.302.695-.053.052-.092.131-.092.164 0 .066-.617 1.025-.8 1.242-.06.072-.219.264-.35.428-.355.434-1.004 1.097-1.346 1.373-.164.131-.31.25-.33.27-.184.203-1.333.946-1.938 1.261-.808.42-1.425.591-2.135.598-.722.006-.953-.033-1.439-.256-1.386-.63-2.418-2.34-3.39-5.586-.421-1.426-.54-1.826-.598-2.082-.066-.276-.131-.218-.256.223-.381 1.38-1.117 3.344-1.623 4.363-.92 1.853-1.927 2.937-3.11 3.357-.499.178-1.45.166-2.029-.025-1.452-.486-2.899-1.623-4.357-3.443-1.426-1.774-2.116-3.292-2.037-4.475.046-.69.118-.933.447-1.426.302-.453.841-.914 1.44-1.236.426-.23 1.28-.584 1.609-.676.111-.026.375-.099.592-.158.216-.066.453-.126.525-.139.867-.17 1.255-.255 1.295-.281.026-.02-.302-.04-.723-.047-.42 0-.947-.026-1.164-.053-.453-.059-1.445-.276-1.642-.36a6 6 0 0 0-.46-.17c-1.241-.441-2.378-1.33-3.087-2.427-.316-.486-.659-1.221-.73-1.576a10 10 0 0 1-.19-1.123c-.027-.217-.054-.466-.067-.558a33 33 0 0 1-.197-1.873c-.026-.29-.053-.632-.066-.756a72 72 0 0 1-.073-.756c-.02-.29-.05-.631-.064-.756-.164-1.938-.172-3.68-.008-4.238.302-1.019.73-1.466 1.623-1.715.29-.08 1.157-.078 1.531.008 1.183.25 3.576 1.655 5.008 2.93.072.065.237.21.361.322.927.828 2.543 2.522 3.358 3.521.23.29.447.553.486.592.033.04.139.17.23.289.093.118.196.25.23.29.098.104 1.065 1.43 1.486 2.042.492.71 1.201 1.847 1.378 2.229.138.282.256.387.256.236 0-.105.836-1.485 1.434-2.365 1.866-2.76 4.257-5.488 6.353-7.262.566-.473.769-.63 1.63-1.22 1.648-1.126 2.937-1.676 4.015-1.688"></path></g><g class="social-svg-mask" style="transition:fill 170ms ease-in-out;fill:transparent"><path d="M0 0v64h64V0Zm45.498 17.766a2.84 2.84 0 0 1 1.354.312c.578.296.932.915 1.103 1.92.085.513.046 2.326-.086 3.666-.013.125-.038.494-.064.822-.02.322-.054.696-.067.82-.013.125-.039.434-.058.69-.027.25-.06.585-.073.736-.02.158-.046.408-.066.559-.099.92-.118 1.07-.13 1.104-.014.02-.041.244-.067.494-.171 1.662-1.354 3.376-2.938 4.263-1.261.703-2.667 1.045-4.336 1.051-.801.007-.927.041-.447.133.94.17 2.005.518 2.86.945 2.247 1.11 3.041 2.747 2.331 4.778-.118.322-.25.636-.302.695-.053.052-.092.131-.092.164 0 .066-.617 1.025-.8 1.242-.06.072-.219.264-.35.428-.355.434-1.004 1.097-1.346 1.373-.164.131-.31.25-.33.27-.184.203-1.333.946-1.938 1.261-.808.42-1.425.591-2.135.598-.722.006-.953-.033-1.439-.256-1.386-.63-2.418-2.34-3.39-5.586-.421-1.426-.54-1.826-.598-2.082-.066-.276-.131-.218-.256.223-.381 1.38-1.117 3.344-1.623 4.363-.92 1.853-1.927 2.937-3.11 3.357-.499.178-1.45.166-2.029-.025-1.452-.486-2.899-1.623-4.357-3.443-1.426-1.774-2.116-3.292-2.037-4.475.046-.69.118-.933.447-1.426.302-.453.841-.914 1.44-1.236.426-.23 1.28-.584 1.609-.676.111-.026.375-.099.592-.158.216-.066.453-.126.525-.139.867-.17 1.255-.255 1.295-.281.026-.02-.302-.04-.723-.047-.42 0-.947-.026-1.164-.053-.453-.059-1.445-.276-1.642-.36a6 6 0 0 0-.46-.17c-1.241-.441-2.378-1.33-3.087-2.427-.316-.486-.659-1.221-.73-1.576a10 10 0 0 1-.19-1.123c-.027-.217-.054-.466-.067-.558a33 33 0 0 1-.197-1.873c-.026-.29-.053-.632-.066-.756a72 72 0 0 1-.073-.756c-.02-.29-.05-.631-.064-.756-.164-1.938-.172-3.68-.008-4.238.302-1.019.73-1.466 1.623-1.715.29-.08 1.157-.078 1.531.008 1.183.25 3.576 1.655 5.008 2.93.072.065.237.21.361.322.927.828 2.543 2.522 3.358 3.521.23.29.447.553.486.592.033.04.139.17.23.289.093.118.196.25.23.29.098.104 1.065 1.43 1.486 2.042.492.71 1.201 1.847 1.378 2.229.138.282.256.387.256.236 0-.105.836-1.485 1.434-2.365 1.866-2.76 4.257-5.488 6.353-7.262.566-.473.769-.63 1.63-1.22 1.648-1.126 2.937-1.676 4.015-1.688"></path></g></svg></span></a>
                         </nav>
@@ -41,6 +46,13 @@
                 </div>
             </div>
         </header>
+        <ul id="mobile-nav-menu" class="menu inactive">
+            <li><a class="active menuItem" href="overview.html">Overview</a></li>
+            <li><a class="menuItem" href="notes.html" aria-current="page">Notes</a></li>
+            <li><a class="menuItem" href="articles.html">Articles</a></li>
+            <li><a class="menuItem" href="projects.html">Projects</a></li>
+            <li><a class="menuItem" href="me.html">About me</a></li>
+        </ul>
         <div class="blog-sub-wrapper">
             <aside class="sidebar">
                 <div class="sidebar-wrapper">
@@ -59,7 +71,10 @@
                     </div>
                     <div class="sidebar-section">
                         <h3>Recent Posts</h3>
-                        <a href="2024-retrospective.html">Beginning of the Year Retrospective</a>
+                        <ul class="post-links">
+                            <li><a href="ethics of ai.html">On the Efficacy and Ethics of Generative AI</a></li>
+                            <li><a href="2024-retrospective.html">Beginning of the Year Retrospective</a></li>
+                        </ul>
                     </div>
                 </div>
             </aside>
@@ -77,10 +92,48 @@
                                 <div class="hero-chibi">
                                     <img oncontextmenu="return false" src="../imgs/sophchibi2.webp" alt="">
                                 </div>
-                                
+                            </div>
+                            <div class="hero-wrapper overview-section">
+                                <div>
+                                <a href="notes.html"><h5 class="section-header-link">Notes</h5></a>
+                                <p>The place for general updates. I will post life updates as well as project-related shenanigans and site upgrades.</p>
+                                <div class="section-content-wrapper">
+                                    <div class="side-line"></div>
+                                    <div class="section-content">
+                                        <a href="2024-retrospective.html"><h6 class="section-content-link">Beginning of the Year Retrospective</h6></a>
+                                        <p>I reflect on 2024 and discuss my goals going into 2025.</p>
+                                        <div class="tags">
+                                            <div class="tag personal-tag"><p>Personal</p></div>
+                                            <div class="tag professional-tag"><p>Professional</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="hero-chibi">
+
+                                </div>
+                            </div>
+                            <div class="hero-wrapper overview-section">
+                                <div>
+                                <a href="notes.html"><h5 class="section-header-link">Articles</h5></a>
+                                <p>The place for more in-depth write-ups on projects I've taken on or things I'm passionate about.</p>
+                                <div class="section-content-wrapper">
+                                    <div class="side-line"></div>
+                                    <div class="section-content">
+                                        <a href="ethics of ai.html"><h6 class="section-content-link">On the Efficacy and Ethics of Generative AI</h6></a>
+                                        <p>I discuss my belief that the use of generative AI -- whether it is to create images, a story, voices for unvoiced NPC dialogue, designs, or code -- is ethically and morally ambiguous at best.</p>
+                                        <div class="tags">
+                                            <div class="tag professional-tag"><p>Professional</p></div>
+                                            <div class="tag opinion-tag"><p>Opinion</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="hero-chibi">
+
+                                </div>
                             </div>
                         </header>
-                        
                     </main>
                 </div>
             </div>

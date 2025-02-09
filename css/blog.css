@@ -29,6 +29,8 @@ h1, h2, h3, h4, h5 {
     scroll-margin-top: calc(var(--navbar-height) + 2.5rem);
 }
 
+
+
 .navbar-section-search {
     visibility: hidden;
 }

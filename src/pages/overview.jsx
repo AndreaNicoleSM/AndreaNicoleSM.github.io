@@ -19,21 +19,36 @@ function Overview() {
                   <div className="hero-wrapper">
                     <div>
                       <p className="hero-description">
-                        I'm a self-taught front-end web developer, and I'm
-                        currently working on strengthening my skills with React
-                        to create more beautiful complex web app projects than
-                        ever. I've been making websites as a hobby since my
-                        family first got a computer when I was young, and it's
-                        been amazing to see how website design has advanced
-                        since.
+                        Welcome to my cozy little corner of the internet! On
+                        this site, I will be posting write-ups on completed
+                        projects, works in progress, and what I'm currently
+                        obsessing over. The goal is to develop my skills and
+                        share my journey!
                       </p>
                       <p className="hero-description">
+                        Additionally, I developed this blog to be the antithesis
+                        to the mainstream AI-driven professional hivemind that
+                        is front-end development in 2025. This is my space to be
+                        genuine, and my hope is that somebody, anybody reading
+                        this can connect or relate either to myself or the
+                        content that I create.
+                      </p>
+                      <p className="hero-description">
+                        On that note, I'm a self-taught front-end web developer,
+                        and I'm currently working on strengthening my skills
+                        with React to create more beautiful, complex web app
+                        projects than before. I've been making websites as a
+                        hobby since my family got our first computer back in the
+                        early 2000s, and it's been amazing to see how website
+                        design has advanced since.
+                      </p>
+                      {/* <p className="hero-description">
                         I enjoy gaming, learning new languages, and spending
                         time with my wife. My favorite genre of games are MMOs,
                         but I love to dabble in just about everything, from
                         survival horror to retro. I'm also a big fan of TTRPGs.
-                        The chibi on the right was a commission for my character
-                        in the campaign I'm currently in (credit:{" "}
+                        The chibi was a commission for my character in the
+                        campaign I'm currently taking part in (credit:{" "}
                         <a
                           href="https://bsky.app/profile/arteleonoir.bsky.social"
                           target="_blank"
@@ -41,14 +56,7 @@ function Overview() {
                           @arteleonoir
                         </a>{" "}
                         ).{" "}
-                      </p>
-                      <p className="hero-description">
-                        Welcome to my cozy little corner of the internet! On
-                        this site, I will be posting write-ups on completed
-                        projects, works in progress, and what I'm currently
-                        obsessing over. The goal is to develop my skills and
-                        share my journey!
-                      </p>
+                        </p> */}
                     </div>
                     <div className="hero-chibi">
                       <img

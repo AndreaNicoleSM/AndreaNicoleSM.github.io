@@ -109,8 +109,8 @@ function EthicsOfAI() {
                         prompts to achieve a certain look and feel. Like a
                         particular artist and want a piece that looks like they
                         drew it but you're too cheap to pay them for the real
-                        thing? Why not use genAI using your favorite pieces of
-                        theirs with?!
+                        thing? Why not use genAI to rip your favorite piece of
+                        theirs?!
                       </p>
                       <p className="hero-description">
                         Now obviously that statement was satire and meant to be

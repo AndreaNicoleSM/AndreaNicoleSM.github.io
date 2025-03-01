@@ -59,6 +59,16 @@ function Sidebar() {
             </li>
           </ul>
         </div>
+        <div className="sidebar-section">
+          <h3>Buy me a coffee</h3>
+          <p>
+            If you enjoy what I do or you're just feeling generous, I have a{" "}
+            <a href="https://ko-fi.com/andreamelo" target="_blank">
+              Ko-fi
+            </a>
+            !
+          </p>
+        </div>
       </div>
     </aside>
   );

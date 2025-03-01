@@ -10,10 +10,10 @@ function OverviewContent() {
           <div>
             <p className="hero-description">
               I'm a self-taught front-end web developer, and I'm currently
-              working on learning React to create more complex web app projects.
-              I've been making websites as a hobby since my family first got a
-              computer when I was young, and it's been amazing to see how
-              website design has advanced since.
+              working on learning React to create more beautiful, complex web
+              app projects. I've been making websites as a hobby since my family
+              first got a computer when I was young, and it's been amazing to
+              see how website design has advanced since.
             </p>
             <p className="hero-description">
               I enjoy gaming, learning new languages, and spending time with my

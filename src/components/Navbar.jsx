@@ -1,6 +1,6 @@
 import Github from "./icons/github";
 import Bluesky from "./icons/bluesky";
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 import ToggleMobileNav from "../pages/toggleMobileNav";
 import Hamburger from "../assets/imgs/hamburger.png";
 import Close from "../assets/imgs/close.png";
@@ -39,11 +39,11 @@ function Navbar() {
                 />
               </button>
               <nav className="navbar-menu navbar-items">
-                <Link to="/overview">Overview</Link>
-                <Link to="/notes">Notes</Link>
-                <Link to="/articles">Articles</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/me">About me</Link>
+                <NavLink to="/overview">Overview</NavLink>
+                <NavLink to="/notes">Notes</NavLink>
+                <NavLink to="/articles">Articles</NavLink>
+                <NavLink to="/projects">Projects</NavLink>
+                <NavLink to="/me">About me</NavLink>
               </nav>
               <nav className="social">
                 <a

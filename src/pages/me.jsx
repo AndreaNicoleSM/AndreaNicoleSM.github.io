@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import { Link } from "react-router";
 import Ether from "../assets/imgs/ether.webp";
 import Selfie from "../assets/imgs/selfie.webp";
 import Navbar from "../components/navbar";
@@ -21,10 +22,12 @@ function Me() {
                       <p className="hero-description">
                         My name is Andréa Melo, and I'm currently working as a
                         free-lance web developer and designer. My main interest
-                        lies in making pretty, modern websites mostly, but my
-                        very first ever commission was a retro, early-2000s era
-                        website. I love programming and development in general,
-                        so I also dabble in Python and occasionally Java.
+                        lies in making beautiful, modern websites mostly, but I
+                        build bespoke sites of any aesthetic. My very first ever
+                        commission was a kitschy, retro, early-2000s-esque art
+                        portfolio website. My love for programming extends
+                        beyond web development, so I do also dabble in other
+                        languages.
                       </p>
                       <p className="hero-description">
                         I'm a queer woman with a beautiful wife and four cats
@@ -32,25 +35,25 @@ function Me() {
                         PA, but I'm a free spirit who has recently had the
                         privilege of moving across the equator to Brazil, where
                         my wife and her family are. More information about that
-                        in <a href="2024-retrospective.html">this post</a>!
+                        in <Link to="/retrospective-2024">this post</Link>!
                       </p>
                       <p className="hero-description">
-                        I created this blog adjacent to my Portfolio because
+                        I created this blog adjacent to my portfolio because
                         I've always wanted a place where I could truly express
                         myself. I want this space not just to show the things
-                        I've done, but to show my passion and expression in its
-                        execution. It's my opinion that if you eschew everything
-                        that makes you uniquely you in the name of perfect
+                        I've created, but for it to show my passion and
+                        personality as well. It's my opinion that if you eschew
+                        that whichs makes you unique in the name of
                         professionalism, then you've lost an important part
                         yourself.
                       </p>
                       <p className="hero-description">
-                        I struggle with face-to-face social interactions, but
-                        I've found over the years that I can truly be myself
-                        online. That's why this space is so great for me! It
-                        gives me a medium through which I can show the world who
-                        I am and what I can do. It's my own cozy corner of the
-                        internet!
+                        As an autistic woman, I tend to struggle with
+                        face-to-face social interactions. I've found over the
+                        years, however, that I can truly be myself online, which
+                        is why this space is so great for me! It gives me a
+                        medium through which I can show the world who I am and
+                        what I can do. It's my own cozy corner of the internet!
                       </p>
                       <p className="hero-description">
                         As I grow the site, it will give me the ability to add
@@ -126,22 +129,28 @@ function Me() {
                       <p className="hero-description">
                         MMOs hold a special place in my heart for that reason,
                         and so my wife and I have made it our mission to play
-                        just about every MMO we can -- JoshStrifeHayes style! We
-                        might not play any particular MMO for more than a few
-                        hours, but there are two MMOs we go back to time and
-                        time again: Guild Wars 2 and Final Fantasy XI. There's
-                        something about those two games that just thoroughly
-                        captured our hearts.
+                        just about every MMO we can --{" "}
+                        <a
+                          href="https://www.youtube.com/@JoshStrifeHayes"
+                          target="_blank"
+                        >
+                          JoshStrifeHayes
+                        </a>{" "}
+                        style! We might not play any particular MMO for more
+                        than a few hours, but there are two MMOs we go back to
+                        time and time again: Guild Wars 2 and Final Fantasy XI.
+                        There's something about those two games that just
+                        thoroughly captured our hearts.
                       </p>
                       <p className="hero-description">
-                        Currently playing: <br />- <em>Silent Hill 2 Remake</em>{" "}
-                        <br />- <em>Final Fantasy IX</em> <br />-{" "}
-                        <em>Hollowbody</em>
+                        Currently playing: <br />-{" "}
+                        <em>Resident Evil 4 Remake</em> <br />-{" "}
+                        <em>Final Fantasy IX</em> <br />- <em>Hollowbody</em>
                       </p>
                       <p className="hero-description">
                         Plan to play soon: <br />- <em>Final Fantasy XI</em>{" "}
-                        <br />- <em>WoW Ascension: Conquest of Azeroth</em>{" "}
-                        <br />- <em>Pathfinder: Wrath of the Righteous</em>
+                        <br />- <em>Silent Hill 3</em> <br />-{" "}
+                        <em>Pathfinder: Wrath of the Righteous</em>
                       </p>
                       <p className="hero-description">
                         My wife introduced me to the world of TTRPGs (Table Top

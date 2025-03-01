@@ -30,9 +30,7 @@ function NavbarAlt() {
             </div>
             <div className="navbar-section right">
               <nav className="navbar-menu alt-nav shown">
-                <Link to="/overview" target="_blank">
-                  {t("nav_5")}
-                </Link>
+                <Link to="/overview">{t("nav_5")}</Link>
               </nav>
               <nav className="social">
                 <a

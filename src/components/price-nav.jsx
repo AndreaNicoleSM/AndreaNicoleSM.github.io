@@ -1,11 +1,10 @@
+import React from "react";
 import Github from "./icons/github";
 import Bluesky from "./icons/bluesky";
-import { Link, NavLink } from "react-router";
-import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router";
 import { useTranslation } from "react-i18next";
-import ScrollDialog from "./price-modal";
 
-function NavbarAlt() {
+const PriceNav = () => {
   const { t } = useTranslation();
 
   return (
@@ -15,23 +14,13 @@ function NavbarAlt() {
           <div className="navbar-container-alt">
             <div className="navbar-section left">
               <nav className="navbar-menu alt-nav navbar-items">
-                <HashLink smooth to="/#home">
-                  {t("nav_1")}
-                </HashLink>
-                <HashLink smooth to="/#about">
-                  {t("nav_2")}
-                </HashLink>
-                <HashLink smooth to="/#portfolio">
-                  {t("nav_3")}
-                </HashLink>
-                <HashLink smooth to="/#contact">
-                  {t("nav_4")}
-                </HashLink>
+                <Link className="navbar-title-link" to="/">
+                  <h1>ANDRÉA MELO</h1>
+                </Link>
               </nav>
             </div>
             <div className="navbar-section right">
               <nav className="navbar-menu alt-nav shown">
-                <ScrollDialog />
                 <Link to="/overview">{t("nav_5")}</Link>
               </nav>
               <nav className="social">
@@ -51,6 +40,6 @@ function NavbarAlt() {
       </header>
     </>
   );
-}
+};
 
-export default NavbarAlt;
+export default PriceNav;

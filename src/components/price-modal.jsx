@@ -41,6 +41,18 @@ export default function ScrollDialog() {
         scroll={scroll}
         aria-labelledby="scroll-dialog-title"
         aria-describedby="scroll-dialog-description"
+        sx={{
+          "& .MuiDialog-paper": {
+            backgroundColor: "rgb(255, 255, 255, 0.75)",
+            backdropFilter: "blur(10px)",
+            backgroundImage: "none",
+            boxShadow: "none",
+            transition: "none",
+          },
+          "& .MuiModal-backdrop": {
+            backgroundColor: "rgb(0, 0, 0, 0.2)",
+          },
+        }}
       >
         <DialogTitle id="scroll-dialog-title">
           {t("service_pricing")}
@@ -113,7 +125,14 @@ export default function ScrollDialog() {
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose}>Close</Button>
+          <Button
+            onClick={handleClose}
+            sx={{
+              color: "#1b242f",
+            }}
+          >
+            {t("close")}
+          </Button>
           {/* <Button onClick={handleClose}>Subscribe</Button> */}
         </DialogActions>
       </Dialog>

@@ -98,9 +98,7 @@ i18n
           terms_7:
             "Listed turnaround times are estimates based on the base complexity of a project. Turnaround times are subject to change based on complexity. I will cite the guaranteed turnaround time at the time of consultation.",
           terms_8: "",
-          terms_9: "",
-          terms_10: "",
-          terms_11: "",
+          close: "Close",
         },
       },
       pt: {
@@ -155,8 +153,8 @@ i18n
           single_page: "Site de Página Única:",
           multi_page: "Site de Várias Paginas:",
           base_price: "Preço Base:",
-          price_single: "$150 USD",
-          price_multi: "$350 USD",
+          price_single: "R$ 300",
+          price_multi: "R$ 700",
           est_turnaround: "Tempo Estimado de Entrega:",
           turnaround_single: "2 - 4 dias úteis",
           turnaround_multi: "1 - 2 semanas",
@@ -165,7 +163,7 @@ i18n
           custom_domain: "Domínio Personalizado:",
           custom_domain_txt: "Incluído por 1 ano com opção de renovação",
           design_reference:
-            "Você pode fornecer um arquivo de design figma se tiver um, mas isso não é obrigatório. Você também pode me enviar referências inspiradoras.",
+            "Você pode fornecer um arquivo de design figma se tiver um, mas isso não é obrigatório. Você também pode me enviar referências para inspiração.",
           terms: "Termos de Serviço",
           terms_1:
             "Eu, Andréa Melo, reservo e mantenho os direitos autorais de todo código produzido na criação de todo e qualquer produto comissionado. Os direitos sobre o código de um projeto podem ser adquiridos pelo comissário por uma taxa adicional, dependendo da complexidade do projeto.",
@@ -181,6 +179,7 @@ i18n
           terms_7:
             "Os tempos de entrega listados são estimativas baseadas na complexidade base de um projeto. Os tempos de entrega estão sujeitos a alterações com base na complexidade. Citarei o tempo de entrega garantido no momento da consulta.",
           terms_8: "",
+          close: "Fechar",
         },
       },
     },

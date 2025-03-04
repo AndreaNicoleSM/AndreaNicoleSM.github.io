@@ -57,7 +57,11 @@ export default function ScrollDialog() {
         <DialogTitle id="scroll-dialog-title">
           {t("service_pricing")}
         </DialogTitle>
-        <DialogContent dividers={scroll === "paper"} id="dialog-content">
+        <DialogContent
+          dividers={scroll === "paper"}
+          id="dialog-content"
+          sx={{ scrollbarWidth: "thin", scrollbarColor: "gray transparent" }}
+        >
           <DialogContentText
             id="scroll-dialog-description"
             ref={descriptionElementRef}

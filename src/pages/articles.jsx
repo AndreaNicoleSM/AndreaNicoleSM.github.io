@@ -27,7 +27,7 @@ function Articles() {
                 </header>
                 <div className="hero">
                   <h6>2025</h6>
-                  <Link to="/ethics-and-efficacy-of-ai">
+                  <Link to="/articles/ethics-and-efficacy-of-ai">
                     On the Efficacy and Ethics of Generative AI
                   </Link>
                 </div>

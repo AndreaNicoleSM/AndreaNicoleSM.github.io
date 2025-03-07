@@ -27,12 +27,12 @@ function Notes() {
                 </header>
                 <div className="hero">
                   <h6>2025</h6>
-                  <Link to="/retrospective-2024">
+                  <Link to="/notes/retrospective-2024">
                     Beginning of the Year Retrospective
                   </Link>{" "}
                   <br />
                   <br />
-                  <Link to="/site-refactor">Site Refactor: React</Link>
+                  <Link to="/notes/site-refactor">Site Refactor: React</Link>
                 </div>
               </main>
             </div>

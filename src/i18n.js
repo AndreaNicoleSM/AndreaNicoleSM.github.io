@@ -57,6 +57,7 @@ i18n
             "Apps I've created using Python, NumPy, and Pandas. For a fuller picture of my Python projects, please check my <a href='https://github.com/AndreaNicoleSM' target='_blank'>Github profile.</a>",
           certifications_content:
             "Certifications I've earned in various areas of web and software development.",
+          learn_more: "Learn More",
           project_title_1: "ARTELEONOIR",
           project_txt_1:
             "A kitschy, early-2000s-era digital art portfolio website. \n  \n  Created for <1 href='https://bsky.app/profile/arteleonoir.bsky.social' target='_blank'>@artleoenoir.bsky.social</1>",
@@ -134,6 +135,7 @@ i18n
             "Aplicativos web criados exclusivamente usando o framework React.js",
           python_content:
             "Aplicativos criados usando Python, NumPy, e Pandas. Para uma apresentação mais completa dos meus projetos em Python, favor checar meu <a href='https://github.com/AndreaNicoleSM' target='_blank'>perfil no Github</a>.",
+          learn_more: "Learn More",
           project_title_1: "ARTELEONOIR",
           project_txt_1:
             "Website para um portfólio de arte digital com visual retrô dos anos 2000. \n  \n  Criado para <1 href='https://bsky.app/profile/arteleonoir.bsky.social' target='_blank'>@artleoenoir.bsky.social</1>",

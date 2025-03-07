@@ -11,6 +11,7 @@ import Layout from "./Layout";
 import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/home";
 import SiteRefactor from "./pages/site-refactor";
+import ArtEleonoir from "./pages/arteleonoir";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
             element={<EthicsOfAI />}
           />
           <Route path="/notes/site-refactor" element={<SiteRefactor />} />
+          <Route path="/projects/arteleonoir" element={<ArtEleonoir />} />
         </Route>
       </Routes>
     </Router>

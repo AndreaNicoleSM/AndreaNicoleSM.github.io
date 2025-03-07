@@ -32,6 +32,9 @@ function ProjectSection() {
                     ),
                   }}
                 />
+                <br />
+                <br />
+                <Link to="/projects/arteleonoir">{t("learn_more")}</Link>
               </p>
               <div className="tags alt-tags">
                 <div className="tag tech-tag">

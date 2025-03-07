@@ -159,6 +159,53 @@ function Overview() {
                   </div>
                   <div className="hero-chibi"></div>
                 </div>
+                <div className="hero-wrapper overview-section">
+                  <div>
+                    <Link to="/projects">
+                      <h5 className="section-header-link">Projects</h5>
+                    </Link>
+                    <p className="hero-description">
+                      This is where you can find a link to every project I've
+                      completed and am proud of, regardless of the tech stack.
+                    </p>
+                    <div className="section-content-wrapper">
+                      <div className="side-line"></div>
+                      <div className="section-content">
+                        <Link to="/projects/arteleonoir">
+                          <h6 className="section-content-link">eleonoir.art</h6>
+                        </Link>
+                        <p className="hero-description">
+                          A kitschy, early-2000s-era digital art portfolio
+                          website.
+                        </p>
+                        <p className="hero-description">
+                          Created for{" "}
+                          <a
+                            href="https://bsky.app/profile/arteleonoir.bsky.social"
+                            target="_blank"
+                          >
+                            @arteleonoir
+                          </a>
+                        </p>
+                        <div className="tags alt-tags">
+                          <div className="tag tech-tag">
+                            <p>HTML</p>
+                          </div>
+                          <div className="tag tech-tag">
+                            <p>CSS</p>
+                          </div>
+                          <div className="tag tech-tag">
+                            <p>Javascript</p>
+                          </div>
+                          <div className="tag tech-tag">
+                            <p>Client</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="hero-chibi"></div>
+                </div>
               </main>
             </div>
           </div>

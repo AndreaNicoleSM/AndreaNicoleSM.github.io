@@ -81,7 +81,7 @@ function Overview() {
                     <div className="section-content-wrapper">
                       <div className="side-line"></div>
                       <div className="section-content">
-                        <Link to="/site-refactor">
+                        <Link to="/notes/site-refactor">
                           <h6 className="section-content-link">
                             Site Refactor: React
                           </h6>
@@ -101,7 +101,7 @@ function Overview() {
                     <div className="section-content-wrapper">
                       <div className="side-line"></div>
                       <div className="section-content">
-                        <Link to="/retrospective-2024">
+                        <Link to="/notes/retrospective-2024">
                           <h6 className="section-content-link">
                             Beginning of the Year Retrospective
                           </h6>
@@ -135,7 +135,7 @@ function Overview() {
                     <div className="section-content-wrapper">
                       <div className="side-line"></div>
                       <div className="section-content">
-                        <Link to="/ethics-and-efficacy-of-ai">
+                        <Link to="/articles/ethics-and-efficacy-of-ai">
                           <h6 className="section-content-link">
                             On the Efficacy and Ethics of Generative AI
                           </h6>

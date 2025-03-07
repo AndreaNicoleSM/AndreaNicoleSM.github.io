@@ -94,7 +94,7 @@ i18n
           terms_5:
             "Examples of complex features that would require additional time and increase the quote of a project are, but are not limited to, the addition of a log-in / authentication feature, e-commerce site requirements such as payment systems integration, and other back-end features. For clarity, all additional charges will be listed on the quote invoice.",
           terms_6:
-            "For a project to begin, both the quote and terms will be agreed upon by both myself and the commissioner, at which time paymentin the amount of half of the quoted price will become due. <2>Work will not commence unless payment is received.</2> Upon completion of the project, the remaining half of the quoted price will become due. <2>Ownership of the website and its associated domain will not be given until this payment has been received.</2>",
+            "For a project to begin, both the quote and terms will be agreed upon by both myself and the commissioner, at which time paymentin the amount of half of the quoted price will become due. <2>Work will not commence unless payment is received, and this payment is nonrefundable.</2> Upon completion of the project, the remaining half of the quoted price will become due. <2>Ownership of the website and its associated domain will not be given until this payment has been received.</2>",
           terms_7:
             "Listed turnaround times are estimates based on the base complexity of a project. Turnaround times are subject to change based on complexity. I will cite the guaranteed turnaround time at the time of consultation.",
           terms_8: "",
@@ -175,7 +175,7 @@ i18n
           terms_5:
             "Exemplos de recursos complexos que exigiriam tempo adicional e aumentariam o orçamento de um projeto são, mas não estão limitados a, a adição de um recurso de login/autenticação, requisitos de site de e-commerce, como integração de sistemas de pagamento e outros recursos de back-end. Para maior clareza, todos os encargos adicionais serão listados na fatura do orçamento.",
           terms_6:
-            "Para que um projeto comece, tanto o orçamento quanto os termos serão acordados por mim e pelo comissário, momento em que o pagamento no valor de metade do preço cotado será devido. <2>O trabalho não começará a menos que o pagamento seja recebido.</2> Após a conclusão do projeto, a metade restante do preço cotado será devida. <2>A propriedade do site e seu domínio associado não serão concedidos até que este pagamento seja recebido.</2>",
+            "Para que um projeto comece, tanto o orçamento quanto os termos serão acordados por mim e pelo comissário, momento em que o pagamento no valor de metade do preço cotado será devido. <2>O trabalho não começará a menos que o pagamento seja recebido, e este pagamento não é reembolsável.</2> Após a conclusão do projeto, a metade restante do preço cotado será devida. <2>A propriedade do site e seu domínio associado não serão concedidos até que este pagamento seja recebido.</2>",
           terms_7:
             "Os tempos de entrega listados são estimativas baseadas na complexidade base de um projeto. Os tempos de entrega estão sujeitos a alterações com base na complexidade. Citarei o tempo de entrega garantido no momento da consulta.",
           terms_8: "",

@@ -11,7 +11,6 @@ import Layout from "./Layout";
 import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/home";
 import SiteRefactor from "./pages/site-refactor";
-import Pricing from "./pages/pricing";
 
 function App() {
   return (
@@ -20,15 +19,20 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/pricing" element={<Pricing />} />
           <Route path="/overview" element={<Overview />} />
           <Route path="/notes" element={<Notes />} />
           <Route path="/articles" element={<Articles />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/me" element={<Me />} />
-          <Route path="/retrospective-2024" element={<Retrospective2024 />} />
-          <Route path="/ethics-and-efficacy-of-ai" element={<EthicsOfAI />} />
-          <Route path="/site-refactor" element={<SiteRefactor />} />
+          <Route
+            path="/notes/retrospective-2024"
+            element={<Retrospective2024 />}
+          />
+          <Route
+            path="/articles/ethics-and-efficacy-of-ai"
+            element={<EthicsOfAI />}
+          />
+          <Route path="/notes/site-refactor" element={<SiteRefactor />} />
         </Route>
       </Routes>
     </Router>

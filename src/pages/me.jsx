@@ -35,7 +35,8 @@ function Me() {
                         PA, but I'm a free spirit who has recently had the
                         privilege of moving across the equator to Brazil, where
                         my wife and her family are. More information about that
-                        in <Link to="/retrospective-2024">this post</Link>!
+                        in <Link to="/notes/retrospective-2024">this post</Link>
+                        !
                       </p>
                       <p className="hero-description">
                         I created this blog adjacent to my portfolio because

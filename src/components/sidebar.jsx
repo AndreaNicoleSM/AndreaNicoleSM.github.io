@@ -45,15 +45,15 @@ function Sidebar() {
           <h3>Recent Posts</h3>
           <ul className="post-links">
             <li>
-              <Link to="/site-refactor">Site Refactor: React</Link>
+              <Link to="/notes/site-refactor">Site Refactor: React</Link>
             </li>
             <li>
-              <Link to="/ethics-and-efficacy-of-ai">
+              <Link to="/articles/ethics-and-efficacy-of-ai">
                 On the Efficacy and Ethics of Generative AI
               </Link>
             </li>
             <li>
-              <Link to="/retrospective-2024">
+              <Link to="/notes/retrospective-2024">
                 Beginning of the Year Retrospective
               </Link>
             </li>
